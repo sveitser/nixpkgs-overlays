@@ -3,16 +3,13 @@ with import <nixpkgs> {
 };
 
 (python3.withPackages (ps: with ps; [
-  # bandmat
   clldutils
   csvw
-  # fastdtw
   joblib
   lws
-  # nnmnkwii
   phonemizer
-  # pysptk
   resampy
   segments
+  tensorboardX
 ]))
 
