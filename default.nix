@@ -5,6 +5,7 @@ with import <nixpkgs> {
 (python3.withPackages (ps: with ps; [
   clldutils
   csvw
+  horovod
   joblib
   lws
   phonemizer
