@@ -2,10 +2,10 @@ self: super: {
   lorri =
     let src =
       (super.fetchFromGitHub {
-        owner = "target";
+        owner = "sveitser";
         repo = "lorri";
-        rev = "5ee8a05709db718b453de10785573bead1be1124";
-        sha256 = "0mj4qv0vhd4wly172741vya371mzhcwg2kpmpwlbaxxrwxjl5gxg";
+        rev = "91fd3becff4d0564c8584700111ae8a9364b78fc";
+        sha256 = "0kvscn48rpggfsxa8wil5jxxmz5c1jsynpm0jhvknsal8vrv991c";
       });
     in super.callPackage src { inherit src; };
 }
