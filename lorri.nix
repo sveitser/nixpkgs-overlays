@@ -4,8 +4,8 @@ self: super: {
       (super.fetchFromGitHub {
         owner = "sveitser";
         repo = "lorri";
-        rev = "d3e452ebc2b24ab86aec18af44c8217b2e469b2a";
-        sha256 = "07yf3gl9sixh7acxayq4q8h7z4q8a66412z0r49sr69yxb7b4q89";
+        rev = "a8317c4a05bd06eb1dccb696a28a290b17f6ecb7";
+        sha256 = "1vlj36d2cirbkzp0yzs1rq345zq4l93dxkfp3vnh2x4hm1mlhqwg";
       });
     in super.callPackage src { inherit src; };
 }
