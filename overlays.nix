@@ -8,4 +8,5 @@ self: super: {
         sha256 = "1vlj36d2cirbkzp0yzs1rq345zq4l93dxkfp3vnh2x4hm1mlhqwg";
       });
     in super.callPackage src { inherit src; };
+  kaiti = super.callPackage ./fonts/kaiti/default.nix {};
 }
