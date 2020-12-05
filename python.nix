@@ -3,7 +3,7 @@ self: super: let
     pyDir = ../overlays/python;
     packageOverrides = pyself: pysuper: (builtins.foldl'
       (acc: item: acc // {
-        "${item}" = pysuper.callPackage (pyDir + ("/" + item)) {};
+        "${item}" = pyself.callPackage (pyDir + ("/" + item)) {};
       })
       { }
       (builtins.attrNames (builtins.readDir pyDir)));
