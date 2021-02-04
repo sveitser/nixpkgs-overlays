@@ -11,6 +11,5 @@ with import <nixpkgs> {
   phonemizer
   resampy
   segments
-  tensorboardX
 ]))
 

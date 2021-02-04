@@ -1,6 +1,6 @@
 self: super: let
   overridePython = pypkgs: let
-    pyDir = ../overlays/python;
+    pyDir = ./python;
     packageOverrides = pyself: pysuper: (builtins.foldl'
       (acc: item: acc // {
         "${item}" = pyself.callPackage (pyDir + ("/" + item)) {};
